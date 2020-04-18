@@ -1,0 +1,598 @@
+#N canvas 1 23 1440 808 24;
+#N canvas 0 23 1440 753 engine 1;
+#X floatatom 1634 257 5 0 0 0 - - -;
+#X obj 1120 2077 / 127;
+#X floatatom 1116 2193 5 0 0 0 - - -;
+#X obj 1634 225 ctlin 22 1;
+#X obj 1081 2379 dac~;
+#X obj 1118 2046 ctlin 23 1;
+#X obj 79 69 ctlin 24 1;
+#X floatatom 75 136 5 0 0 0 - - -;
+#X obj 75 169 mtof;
+#X floatatom 75 226 8 0 0 0 - - -;
+#X obj 1118 2246 line~;
+#X obj 75 460 line~;
+#X obj 1543 1023 spigot;
+#X floatatom 1544 969 5 0 0 0 - - -;
+#X obj 33 2094 *~;
+#X obj 1653 1076 line~;
+#X obj 1769 1031 spigot;
+#X floatatom 1779 967 5 0 0 0 - - -;
+#X obj 1055 2351 freeverb~;
+#X obj -132 918 osc~;
+#X obj -25 915 osc~;
+#X obj 82 917 osc~;
+#X obj 211 921 osc~;
+#X obj 330 923 osc~;
+#X obj 443 920 osc~;
+#X obj 581 921 osc~;
+#X obj 678 922 osc~;
+#X obj 1087 2006 *~;
+#X obj -70 2034 r~ all;
+#X obj 220 1090 s~ all;
+#X obj -231 893 osc~;
+#X obj -132 891 *~ 1.71;
+#X obj -25 890 *~ 1.98;
+#X obj 82 891 *~ 2.58;
+#X obj 210 893 *~ 2.64;
+#X obj 328 893 *~ 2.98;
+#X obj 443 892 *~ 3.64;
+#X obj 581 893 *~ 3.93;
+#X obj 677 894 *~ 4.62;
+#X obj -25 943 *~ 1;
+#X floatatom 120 351 5 0 0 0 - - frequency;
+#X msg 1544 998 0 500;
+#X msg 76 427 \$1 400;
+#X obj 45 1661 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 42 1924 line~;
+#X obj 16 2057 *~;
+#X obj 43 1724 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1087 1980 osc~ 125;
+#X obj 63 2064 *~ 0.5;
+#X obj 62 2011 +~ 1;
+#X obj 62 1974 osc~ 7.83;
+#X obj 1086 2323 *~;
+#X obj 176 235 s sound;
+#X obj 1123 1773 r sound;
+#X floatatom 1004 1849 5 0 0 0 - - -;
+#X obj 1005 1791 loadbang;
+#X obj 980 1809 bng 15 250 50 0 empty up empty 17 7 0 10 -258113 -1
+-1;
+#X obj 1125 1881 +;
+#X obj 1124 1827 + 1;
+#X floatatom 1287 1820 5 0 0 0 - - -;
+#X floatatom 1174 1906 5 0 0 0 - - -;
+#X obj 1124 1854 int;
+#X obj 1126 1906 osc~;
+#X obj 45 1631 loadbang;
+#X obj 74 325 + 90;
+#X obj -134 987 pvu~;
+#X floatatom -133 1014 7 0 0 0 - - -;
+#X obj -235 982 pvu~;
+#X obj -25 969 pvu~;
+#X obj 84 972 pvu~;
+#X obj 210 974 pvu~;
+#X obj 331 980 pvu~;
+#X obj 442 977 pvu~;
+#X obj 580 979 pvu~;
+#X obj 677 980 pvu~;
+#X floatatom -235 1010 7 0 0 0 - - -;
+#X floatatom -26 998 7 0 0 0 - - -;
+#X floatatom 83 1000 7 0 0 0 - - -;
+#X floatatom 210 1001 7 0 0 0 - - -;
+#X floatatom 332 1009 7 0 0 0 - - -;
+#X floatatom 443 1004 7 0 0 0 - - -;
+#X floatatom 579 1008 7 0 0 0 - - -;
+#X floatatom 677 1009 7 0 0 0 - - -;
+#X obj -132 945 *~ 0.4;
+#X obj 81 944 *~ 0.5;
+#X obj 209 948 *~ 0.5;
+#X obj 330 950 *~ 0.4;
+#X obj 443 948 *~ 0.1;
+#X obj 580 951 *~ 0.3;
+#X obj 677 950 *~ 0.1;
+#X obj 75 295 * 410;
+#X obj 76 265 / 12543.9;
+#X msg 1776 1001 0.8 500;
+#X floatatom 95 1741 5 0 0 0 - - -;
+#X obj -62 1741 delay 2000;
+#X msg -61 1768 0 1000;
+#X obj -79 1952 snapshot~;
+#X floatatom -79 1980 0 0 0 0 - - -;
+#X msg 42 1799 1;
+#X obj 43 1680 metro 5000;
+#X obj 1684 284 int;
+#X obj 1710 565 spigot;
+#X obj 1551 564 spigot;
+#X floatatom 1772 358 5 0 0 0 - - -;
+#X floatatom 1615 359 5 0 0 0 - - -;
+#X obj 1710 532 + 10;
+#X obj 1550 534 + 10;
+#X obj 1549 469 / 1534.27;
+#X obj 1548 435 inv;
+#X obj 1549 502 * 1490;
+#X obj 1711 492 * 1490;
+#X obj 149 159 bng 15 250 50 0 up empty empty 17 7 0 10 -258113 -1
+-1;
+#X obj 1517 908 >= 65;
+#X obj 1544 935 &&;
+#X obj 1778 932 ||;
+#X floatatom 1632 881 5 0 0 0 - - -;
+#X obj 1737 905 <= 64;
+#X obj 76 491 s~ oscillator;
+#X obj 234 864 r~ oscillator;
+#X obj 258 234 s time;
+#X obj 1549 404 r time;
+#X obj 1709 401 r time;
+#X obj 134 109 s mute;
+#X obj 1632 844 r mute;
+#X obj 1709 598 s duration;
+#X obj 1550 601 s duration;
+#X obj 160 1739 r duration;
+#X obj -80 1917 metro 100;
+#X obj -110 1888 loadbang;
+#X obj 1653 1103 s~ pass;
+#X obj 1001 1980 r~ pass;
+#X obj -233 921 *~ 0.8;
+#X text -68 516 ------------------------------------------------------------
+;
+#X text 1755 223 Get the light value (0-127) from CC#22 on channel
+1;
+#X text 1703 256 0 means darkness and 127 means bright light.;
+#X text 1807 491 Scale the value to a number between 10 and 1500 (ms)
+;
+#X text -518 276 Scale the maximum MIDI value (127 = 12543.9 Hz) to
+500 Hz \, in othe words \, scale the value to a number between 90 and
+500 (Hz).;
+#X text 1835 328 If true \, output 1 (Day time).;
+#X text 1292 330 If true \, output 1 (Night time).;
+#X text 1386 638 ------------------------------------------------------------
+;
+#X text 39 1167 ------------------------------------------------------------
+;
+#X text 762 1167 ------------------------------------------------------------
+;
+#X text 1389 110 Altering fade in time of the oscillators to reach
+targeted volume in accordance with human eye temporal response to the
+specific colour at the different times of day.;
+#X text -573 1709 After 2 seconds \, start fading out the amplitude
+from 1 to 0 in 1 second.;
+#X text 174 1679 Sound from [2] will audible every 5 seconds.;
+#X text -535 1973 Monitoring the amplitude fade in/out times.;
+#X text 286 1734 Set fade in times in accordance with the value received
+from [3].;
+#X text 102 1798 The target volume \, when start fading in.;
+#X msg 1005 1821 125;
+#X text 1014 1626 For monaural beats sound \, it will always occur
+unless the RGB sensor is not close to any object. Its frequencies is
+controlled by the colour value from RGB sensor.;
+#X text 1249 2040 Get potentiometer value (0-127) from CC#23 on channel
+1 and use it to control the master volume of the system.;
+#X text 1169 2350 Add a reveberation effect to the output signal.;
+#X text 141 2006 Scale the output range to a number between 0 and 1
+(instead of -1 and 1).;
+#X obj 1124 1800 * 39;
+#X text 1221 1765 Scale value received from [1] to a number between
+1 and 40 (Hz) in order to create monaural beats.;
+#X obj 1522 229 loadbang;
+#X obj 1119 2172 hsl 128 15 0 1 0 0 empty volume empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 1287 1848 s tell;
+#X obj 190 2326 r tell;
+#X obj -38 2358 >= 1;
+#X obj 18 2354 <= 4;
+#X obj 5 2382 &&;
+#X floatatom 5 2409 5 0 0 0 - - -;
+#X symbolatom 155 2576 15 0 0 0 - - wave;
+#X msg -358 2494 symbol Delta_waves;
+#X obj 77 2352 > 4;
+#X obj 133 2353 <= 8;
+#X obj 131 2379 &&;
+#X floatatom 132 2408 5 0 0 0 - - -;
+#X obj 215 2355 > 8;
+#X obj 256 2355 <= 12;
+#X obj 229 2381 &&;
+#X floatatom 227 2409 5 0 0 0 - - -;
+#X obj 354 2355 > 12;
+#X obj 405 2358 <= 30;
+#X obj 367 2382 &&;
+#X floatatom 369 2409 5 0 0 0 - - -;
+#X obj 506 2357 > 30;
+#X floatatom 508 2385 5 0 0 0 - - -;
+#X msg -146 2494 symbol Theta_waves;
+#X msg 278 2490 symbol Beta_waves;
+#X msg 487 2490 symbol Gamma_waves;
+#X msg 64 2492 symbol Alpha_waves;
+#X obj 132 2435 + 2;
+#X obj 226 2439 + 4;
+#X obj 368 2437 + 6;
+#X obj 507 2437 + 8;
+#X obj 154 2465 route 1 3 5 7 9;
+#X text 401 1167 ------------------------------------------------------------
+;
+#X text -122 2161 ------------------------------------------------------------
+;
+#X obj 1119 2105 s slider;
+#X obj 1063 2451 hsl 100 15 0 1 0 0 empty 1 empty -2 -8 0 10 -262144
+-1 -1 5940 1;
+#X msg 1059 2468 roomsize \$1;
+#X obj 1061 2494 hsl 100 15 0 1 0 0 empty 2 empty -2 -8 0 10 -262144
+-1 -1 4950 1;
+#X msg 1059 2509 damping \$1;
+#X obj 1061 2542 hsl 100 15 0 1 0 0 empty 3 empty -2 -8 0 10 -262144
+-1 -1 9900 1;
+#X msg 1058 2559 width \$1;
+#X obj 1060 2591 hsl 100 15 0 1 0 0 empty 4 empty -2 -8 0 10 -262144
+-1 -1 4950 1;
+#X msg 1057 2608 wet \$1;
+#X text 1259 2150 Receive the potentiometer value from slider at user
+interface page.;
+#X obj 1566 2462 loadbang;
+#X msg 1478 2514 0.6;
+#X msg 1537 2515 0.5;
+#X msg 1595 2518 1;
+#X msg 1656 2517 0.5;
+#X obj 1476 2542 s in1;
+#X obj 1537 2542 s in2;
+#X obj 1596 2543 s in3;
+#X obj 1657 2544 s in4;
+#X text 1741 2487 Initialise reverb parameters.;
+#X text 828 2411 Receive the value from user to change reverb parameters.
+;
+#X text 1229 2101 Send the value to slider located in user interface
+page.;
+#X text -52 2252 Send a wave type to the user interface page to tell
+users which type of brain waves are they listening now.;
+#X obj 1821 408 route 1 3;
+#X obj 1846 376 + 2;
+#X text 1950 355 Send the message to tell the time to users;
+#X msg 1938 387 symbol Day_time;
+#X msg 2129 387 symbol Night_time;
+#X symbolatom 2059 416 10 0 0 0 - - time2;
+#X obj 1116 2273 *~;
+#X obj 1207 2229 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
+1 1;
+#X obj 1117 2219 \$1 25;
+#X obj 1205 2201 loadbang;
+#X text 198 66 Get degrees Kelvin value (0-127) from CC#24 on channel
+1;
+#X text 160 429 Smoothen the transition of frequency.;
+#X text 236 492 Send the scaled frequencies to [2].;
+#X text 123 558 [2] Oscillators.;
+#X text 1553 668 [4] Mute & unmute sound.;
+#X text 552 1206 [5] Output.;
+#X text 1133 1556 [5.2] Monaural beats sound.;
+#X text 13 1433 [5.1] Gong sound.;
+#X text 330 234 Send a normalised (between 0 and 1) value to others
+scale procedure (send to [5.2] and [3] respectively).;
+#X text 175 158 If the Kelvin data is updated \, send a bang to update
+the result of summed sine wave. (located at [5.2]);
+#X text -48 596 Receiving the fundamental frequency from [1] and then
+add tuned and mistuned harmonics to the fundamental in order to create
+gong sound. The ratio and ampltude of each harmonic is set accordingly
+to Matias H. Budhiantho and Gunawan Dewantoro \, who did a research
+about Javanese gong wave signals. Their research can be found here
+https://asa.scitation.org/doi/pdf/10.1121/1.4893934;
+#X text -48 761 These order of oscillators start from fundamental frequency
+\, following by its ratios to first harmonic \, resulting in a sound
+of Javanese gong.;
+#X text 312 1086 Send to [5.1].;
+#X text 1377 402 Receive from [1].;
+#X text 1838 596 Send to [5.1].;
+#X text 207 98 Send a number to check whether the sensor is close to
+the coloured objects or not (send to [4]).;
+#X text 1430 706 Check whether the sensor is close to the coloured
+objects. If the colour sensor gives the value between 65 and 69 \,
+mute the sound of the system \, in other words \, it means the sensor
+is not close to any object. On the other hand \, unmute the sound if
+the sensor is close to an object.;
+#X text 1746 1104 Send to [5].;
+#X text 1351 988 Mute the sound.;
+#X text 1886 989 Unmute the sound.;
+#X text 375 1245 Overall \, this system has 2 main sound sources \,
+which are the Gong sound [5.1] and monaural beats sound [5.2]. Master
+volume is controlled by the values received from potentiometer. Before
+going out through dac~ \, the signal will be passed to reverberation
+effect \, which users can adjust its parametes via user interface.
+;
+#X text 1372 1835 Send the value to [6].;
+#X text 930 1944 Receive from [4].;
+#X text -32 2200 [6] Indicate which type of wave is being played.;
+#X text 48 20 [1] Receive the data.;
+#X text -150 1477 Gong sound is amplitude controlled by the time of
+the day and the distance between RGB sensor and any coloured object
+while its frequencies is controlled by the colour values obtained from
+the sensor. Furthermore \, the gong sound is amplitude modulated by
+modulator \, which has the modulation frequency at 7.83 Hz (Earth resonance
+frequency).;
+#X text 1497 40 [3] Identifying the time of the day;
+#X text 1253 1891 Change one of the frequency of monaural beats \,
+which will be changed accordingly by the colour value received from
+[1]. Meaning \, frequency of the monaural beats will increase if the
+degrees Kelvin increases. In this project \, one oscillator has a fixed
+frequency at 125 Hz \, whilst the other one is altering according to
+the colour value.;
+#X text 179 1883 Signal from [2] is amplitude modulated by a 7.83 Hz
+sine wave \, which is the resonance frequency of the earth (reference
+taken from https://interestingengineering.com/what-is-the-schumann-resonance).
+;
+#X text 946 475 Inverse and scale the value to a number between 10
+and 1500 (ms) \, in other words \, red colour will have a longer fade
+in time than blue colour at night time.;
+#X text 1813 531 Blue colour will have a longer fade in time than red
+colour in day time.;
+#X obj -70 124 loadbang;
+#X obj -71 158 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj -71 177 metro 1000;
+#X text -518 67 Send a bang to update a fade in time in case when the
+levels of light is changed \, but the frequecny is the same.;
+#X obj 1584 909 <= 75;
+#X obj 1816 906 >= 76;
+#X obj 1615 327 <= 20;
+#X obj 1771 330 > 20;
+#X connect 0 0 100 0;
+#X connect 1 0 190 0;
+#X connect 2 0 221 0;
+#X connect 3 0 0 0;
+#X connect 5 0 1 0;
+#X connect 6 0 7 0;
+#X connect 7 0 8 0;
+#X connect 7 0 111 0;
+#X connect 7 0 122 0;
+#X connect 8 0 9 0;
+#X connect 9 0 91 0;
+#X connect 10 0 219 0;
+#X connect 11 0 117 0;
+#X connect 12 0 15 0;
+#X connect 13 0 12 1;
+#X connect 13 0 41 0;
+#X connect 14 0 27 0;
+#X connect 15 0 129 0;
+#X connect 16 0 15 0;
+#X connect 17 0 16 1;
+#X connect 17 0 92 0;
+#X connect 18 0 4 0;
+#X connect 18 1 4 1;
+#X connect 19 0 83 0;
+#X connect 20 0 39 0;
+#X connect 21 0 84 0;
+#X connect 22 0 85 0;
+#X connect 23 0 86 0;
+#X connect 24 0 87 0;
+#X connect 25 0 88 0;
+#X connect 26 0 89 0;
+#X connect 27 0 51 0;
+#X connect 28 0 45 0;
+#X connect 30 0 131 0;
+#X connect 31 0 19 0;
+#X connect 32 0 20 0;
+#X connect 33 0 21 0;
+#X connect 34 0 22 0;
+#X connect 35 0 23 0;
+#X connect 36 0 24 0;
+#X connect 37 0 25 0;
+#X connect 38 0 26 0;
+#X connect 39 0 29 0;
+#X connect 39 0 68 0;
+#X connect 41 0 12 0;
+#X connect 42 0 11 0;
+#X connect 43 0 99 0;
+#X connect 44 0 45 1;
+#X connect 44 0 96 0;
+#X connect 45 0 14 0;
+#X connect 46 0 98 0;
+#X connect 46 0 93 0;
+#X connect 46 0 94 0;
+#X connect 47 0 27 0;
+#X connect 48 0 14 1;
+#X connect 49 0 48 0;
+#X connect 50 0 49 0;
+#X connect 51 0 18 0;
+#X connect 51 0 18 1;
+#X connect 53 0 153 0;
+#X connect 54 0 57 0;
+#X connect 55 0 148 0;
+#X connect 56 0 148 0;
+#X connect 57 0 60 0;
+#X connect 57 0 62 0;
+#X connect 58 0 61 0;
+#X connect 59 0 157 0;
+#X connect 61 0 57 1;
+#X connect 61 0 59 0;
+#X connect 62 0 27 0;
+#X connect 63 0 43 0;
+#X connect 64 0 40 0;
+#X connect 64 0 42 0;
+#X connect 65 0 66 0;
+#X connect 67 0 75 0;
+#X connect 68 0 76 0;
+#X connect 69 0 77 0;
+#X connect 70 0 78 0;
+#X connect 71 0 79 0;
+#X connect 72 0 80 0;
+#X connect 73 0 81 0;
+#X connect 74 0 82 0;
+#X connect 83 0 29 0;
+#X connect 83 0 65 0;
+#X connect 84 0 29 0;
+#X connect 84 0 69 0;
+#X connect 85 0 29 0;
+#X connect 85 0 70 0;
+#X connect 86 0 29 0;
+#X connect 86 0 71 0;
+#X connect 87 0 29 0;
+#X connect 87 0 72 0;
+#X connect 88 0 29 0;
+#X connect 88 0 73 0;
+#X connect 89 0 74 0;
+#X connect 89 0 29 0;
+#X connect 90 0 64 0;
+#X connect 91 0 52 0;
+#X connect 91 0 90 0;
+#X connect 91 0 119 0;
+#X connect 92 0 16 0;
+#X connect 93 0 44 1;
+#X connect 94 0 95 0;
+#X connect 94 0 93 0;
+#X connect 95 0 44 0;
+#X connect 96 0 97 0;
+#X connect 98 0 44 0;
+#X connect 99 0 46 0;
+#X connect 100 0 260 0;
+#X connect 100 0 261 0;
+#X connect 101 0 124 0;
+#X connect 102 0 125 0;
+#X connect 103 0 101 1;
+#X connect 103 0 214 0;
+#X connect 104 0 102 1;
+#X connect 104 0 213 0;
+#X connect 105 0 101 0;
+#X connect 106 0 102 0;
+#X connect 107 0 109 0;
+#X connect 108 0 107 0;
+#X connect 109 0 106 0;
+#X connect 110 0 105 0;
+#X connect 112 0 113 1;
+#X connect 113 0 13 0;
+#X connect 114 0 17 0;
+#X connect 115 0 112 0;
+#X connect 115 0 116 0;
+#X connect 115 0 258 0;
+#X connect 115 0 259 0;
+#X connect 116 0 114 1;
+#X connect 118 0 31 0;
+#X connect 118 0 32 0;
+#X connect 118 0 33 0;
+#X connect 118 0 34 0;
+#X connect 118 0 35 0;
+#X connect 118 0 36 0;
+#X connect 118 0 37 0;
+#X connect 118 0 38 0;
+#X connect 118 0 30 0;
+#X connect 120 0 108 0;
+#X connect 121 0 110 0;
+#X connect 123 0 115 0;
+#X connect 126 0 93 0;
+#X connect 127 0 96 0;
+#X connect 128 0 127 0;
+#X connect 130 0 27 1;
+#X connect 131 0 29 0;
+#X connect 131 0 67 0;
+#X connect 148 0 54 0;
+#X connect 153 0 58 0;
+#X connect 155 0 0 0;
+#X connect 156 0 2 0;
+#X connect 158 0 159 0;
+#X connect 158 0 160 0;
+#X connect 158 0 165 0;
+#X connect 158 0 166 0;
+#X connect 158 0 169 0;
+#X connect 158 0 170 0;
+#X connect 158 0 173 0;
+#X connect 158 0 174 0;
+#X connect 158 0 177 0;
+#X connect 159 0 161 1;
+#X connect 160 0 161 0;
+#X connect 161 0 162 0;
+#X connect 162 0 187 0;
+#X connect 164 0 163 0;
+#X connect 165 0 167 1;
+#X connect 166 0 167 0;
+#X connect 167 0 168 0;
+#X connect 168 0 183 0;
+#X connect 169 0 171 1;
+#X connect 170 0 171 0;
+#X connect 171 0 172 0;
+#X connect 172 0 184 0;
+#X connect 173 0 175 1;
+#X connect 174 0 175 0;
+#X connect 175 0 176 0;
+#X connect 176 0 185 0;
+#X connect 177 0 178 0;
+#X connect 178 0 186 0;
+#X connect 179 0 163 0;
+#X connect 180 0 163 0;
+#X connect 181 0 163 0;
+#X connect 182 0 163 0;
+#X connect 183 0 187 0;
+#X connect 184 0 187 0;
+#X connect 185 0 187 0;
+#X connect 186 0 187 0;
+#X connect 187 0 164 0;
+#X connect 187 1 179 0;
+#X connect 187 2 182 0;
+#X connect 187 3 180 0;
+#X connect 187 4 181 0;
+#X connect 191 0 192 0;
+#X connect 192 0 18 0;
+#X connect 193 0 194 0;
+#X connect 194 0 18 0;
+#X connect 195 0 196 0;
+#X connect 196 0 18 0;
+#X connect 197 0 198 0;
+#X connect 198 0 18 0;
+#X connect 200 0 201 0;
+#X connect 200 0 202 0;
+#X connect 200 0 203 0;
+#X connect 200 0 204 0;
+#X connect 201 0 205 0;
+#X connect 202 0 206 0;
+#X connect 203 0 207 0;
+#X connect 204 0 208 0;
+#X connect 213 0 217 0;
+#X connect 213 1 216 0;
+#X connect 214 0 213 0;
+#X connect 216 0 218 0;
+#X connect 217 0 218 0;
+#X connect 219 0 51 1;
+#X connect 220 0 219 1;
+#X connect 221 0 10 0;
+#X connect 222 0 220 0;
+#X connect 254 0 255 0;
+#X connect 255 0 256 0;
+#X connect 256 0 7 0;
+#X connect 258 0 113 0;
+#X connect 259 0 114 0;
+#X connect 260 0 104 0;
+#X connect 261 0 103 0;
+#X restore 766 655 pd engine;
+#X obj -434 -29 cnv 1050 1050 1050 empty empty LET_SOUND_OF_COLOURS_ENHANCE_YOUR_MENTAL_STATES
+50 30 2 30 -261234 -18449 0;
+#X obj 188 874 hsl 200 40 0 1 0 0 volume slider Master_volume_(Use_knob_to_adjust)
+-4 -18 2 20 -204786 -4160 -1 0 1;
+#X obj -332 705 hsl 200 40 0 1 0 0 1 in1 Room_size -4 -17 2 20 -204800
+-159808 -1 11940 1;
+#X floatatom 443 753 10 0 0 0 Current_fundamental_frequency_of_gong_(Hz)
+frequency -;
+#X symbolatom -71 156 15 0 0 2 You_are_listening_to wave -;
+#X obj -331 882 hsl 200 40 0 1 0 0 2 in2 Damping_(amount_of_damping_of_room's_surfaces)
+-4 -17 2 20 -204800 -259331 -1 9950 1;
+#X obj -332 793 hsl 200 40 0 1 0 0 3 in3 Stereo_width__of_reverb -4
+-17 2 20 -204800 -19158 -1 19900 1;
+#X obj -331 965 hsl 200 40 0 1 0 0 4 in4 Wet -4 -17 2 20 -204800 -228868
+-1 9950 1;
+#X text -229 49 Simply put any object close to the sensor and explore
+your new sensory experience!;
+#X symbolatom 193 669 15 0 0 2 It_looks_like_you_are_in time2 -;
+#X text -307 631 Reverb parameters;
+#X text -45 275 Deep sleep and relaxation.;
+#X text -44 342 Reduced anxiety \, relaxation \, as well as meditative
+and creative states.;
+#X text -45 404 Encourage relaxation \, promote positivity \, and decrease
+anxiety.;
+#X text -45 468 Increase concentration and alertness \, problem solving
+\, and improved memory;
+#X text -45 536 Increase our focus \, cognitive improvement and information
+processing.;
+#X text 652 604 Click to access an audio patch.;
+#X obj 492 81 pddp/dsp;
+#X text 469 38 Enable DSP;
+#X text -53 216 Types of Brain Waves;
+#X text -337 276 Delta waves (0.5-4 Hz);
+#X text -338 338 Theta waves (4-8 Hz);
+#X text -336 402 Alpha waves (8-12 Hz);
+#X text -335 468 Beta waves (13-30 Hz);
+#X text -333 538 Gamma waves (>30 Hz);
